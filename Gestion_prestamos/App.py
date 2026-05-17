@@ -2,6 +2,7 @@ from clases.curso import Curso
 from clases.materia import Materia
 from clases.libro import Libros
 from clases.alumno import Alumno
+from clases.prestamo import Prestamo
 
 #curso = Curso("1A", "1ºESO")
 #curso.insertar_curso()
@@ -48,6 +49,17 @@ from clases.alumno import Alumno
 #alumno3.modificar_alumno()
 #print("Alumno modificado:", alumno3.obtener_un_alumno("12345678A"))
 
+#prestamo = Prestamo("12345678A", "1A", "978-84-670-5070-3", "2024-09-10", "2025-06-20", "P")
+#prestamo.asignar_prestamo()
 
+#prestamos = prestamo.obtener_todos_prestamos()
+#print("Todos los prestamos:", prestamos)
 
+#prestamos_alumno = prestamo.obtener_por_alumno("12345678A")
+#print("Prestamos del alumno:", prestamos_alumno)
 
+#contrato = prestamo.generar_contrato("12345678A")
+#print("Contrato:", contrato)
+
+#prestamo.cerrar_prestamo("12345678A", "978-84-670-5070-3")
+#print("Prestamo cerrado:", prestamo.obtener_por_alumno("12345678A"))
